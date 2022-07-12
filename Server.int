@@ -1,0 +1,6 @@
+Int:000x034568
+int: /dev/boot/ueventedxx
+Cat: /dev/system/firmware/modem :/unpack /dev/local/tmp
+run:/dev/system/bin/sleep "10" 
+Cat: /dev/local/tmp/> "run" install to /dev/system/firmware/modem
+adb reboot system 
